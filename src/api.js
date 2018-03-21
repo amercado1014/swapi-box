@@ -1,4 +1,4 @@
-import { cleanMovieData, cleanPeopleData } from './cleaner.js';
+import { cleanMovieData, cleanPeopleData, cleanPlanetData } from './cleaner.js';
 
 const root = 'https://swapi.co/api/';
 
@@ -23,4 +23,14 @@ const getPeopleData = async () => {
   }
 };
 
-export { getMovieData, getPeopleData };
+const getPlanetData = async () => {
+  try {
+    const response = await fetch(`${root}planets`);
+    const data = await response.json();
+    return cleanPlanetData(data.results);
+  } catch (error) {
+    console.log('Error: ', error);
+  }
+};
+
+export { getMovieData, getPeopleData, getPlanetData };
