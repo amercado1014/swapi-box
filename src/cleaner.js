@@ -28,4 +28,29 @@ const cleanPeopleData = (peopleDataArray) => {
   return Promise.all(promises);
 };
 
-export { cleanMovieData, cleanPeopleData };
+const cleanPlanetData = (planetsDataArrray) => {
+  const promises = planetsDataArrray.map(async planet => {
+    const { name, terrain, population, climate, residents } = planet;
+    const  namesOfResidents= await cleanPlanetResidentsData(residents);
+
+    return {
+      name: name,
+      terrain,
+      population,
+      climate,
+      residents: namesOfResidents.join() || 'none'
+    };
+  });
+  return Promise.all(promises);
+};
+
+const cleanPlanetResidentsData = (residentsDataArray) => {
+  const promises = residentsDataArray.map( async resident => {
+    const residentResponse = await fetch(resident);
+    const residentData = await residentResponse.json();
+    return residentData.name;
+  });
+  return Promise.all(promises);
+};
+
+export { cleanMovieData, cleanPeopleData, cleanPlanetData };

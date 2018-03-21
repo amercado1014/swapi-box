@@ -4,7 +4,7 @@ import CardContainer from '../CardContainer/CardContainer';
 import Favorites from '../Favorites/Favorites';
 import Card from '../Card/Card';
 import Summary from '../Summary/Summary';
-import { getMovieData, getPeopleData } from '../../api';
+import { getMovieData, getPeopleData, getPlanetData } from '../../api';
 import './App.css';
 
 class App extends Component {
@@ -14,14 +14,16 @@ class App extends Component {
     this.state = {
       favorites: [],
       film: {},
-      people: []
+      people: [],
+      planets: []
     };
   }
 
   async componentDidMount() {
     const film = await getMovieData();
     const people = await getPeopleData();
-    this.setState({film, people});
+    const planets = await getPlanetData();
+    this.setState({film, people, planets});
   }
 
   render() {
