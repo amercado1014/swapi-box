@@ -1,4 +1,4 @@
-import { cleanMovieData } from './cleaner.js';
+import { cleanMovieData, cleanPeopleData } from './cleaner.js';
 
 const root = 'https://swapi.co/api/';
 
@@ -8,9 +8,19 @@ const getMovieData = async () => {
     const response = await fetch(`${root}films/${ramdomNumber}`);
     const data =  await response.json();
     return cleanMovieData(data);
-  } catch(error) {
+  } catch (error) {
     console.log('Error: ', error);
   }
 };
 
-export { getMovieData };
+const getPeopleData = async () => {
+  try {
+    const response = await fetch(`${root}people`);
+    const data = await response.json();
+    return cleanPeopleData(data.results);
+  } catch (error) {
+    console.log('Error: ', error);
+  }
+};
+
+export { getMovieData, getPeopleData };
