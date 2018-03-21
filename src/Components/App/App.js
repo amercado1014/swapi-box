@@ -4,7 +4,12 @@ import CardContainer from '../CardContainer/CardContainer';
 import Favorites from '../Favorites/Favorites';
 import Card from '../Card/Card';
 import Summary from '../Summary/Summary';
-import { getMovieData, getPeopleData, getPlanetData } from '../../api';
+import { 
+  getMovieData, 
+  getPeopleData, 
+  getPlanetData, 
+  getVehicleData 
+} from '../../api';
 import './App.css';
 
 class App extends Component {
@@ -15,7 +20,8 @@ class App extends Component {
       favorites: [],
       film: {},
       people: [],
-      planets: []
+      planets: [],
+      vehicles: []
     };
   }
 
@@ -23,7 +29,8 @@ class App extends Component {
     const film = await getMovieData();
     const people = await getPeopleData();
     const planets = await getPlanetData();
-    this.setState({film, people, planets});
+    const vehicles = await getVehicleData();
+    this.setState({film, people, planets, vehicles});
   }
 
   render() {

@@ -53,4 +53,23 @@ const cleanPlanetResidentsData = (residentsDataArray) => {
   return Promise.all(promises);
 };
 
-export { cleanMovieData, cleanPeopleData, cleanPlanetData };
+const cleanVehicleData = (vehiclesDataArrray) => {
+  const promises = vehiclesDataArrray.map( async vehicle => {
+    const { name, model, vehicle_class, passengers } = vehicle;
+    
+    return {
+      name,
+      model,
+      class: vehicle_class,
+      passengers
+    };
+  });
+  return Promise.all(promises);
+};
+
+export { 
+  cleanMovieData, 
+  cleanPeopleData, 
+  cleanPlanetData,
+  cleanVehicleData 
+};
