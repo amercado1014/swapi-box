@@ -1,4 +1,4 @@
-const cleanMovieData = (movieData) => {
+const cleanFilmData = (movieData) => {
   return {
     text: movieData.opening_crawl,
     title: movieData.title,
@@ -77,7 +77,7 @@ const cleanVehicleData = (vehiclesDataArrray) => {
 };
 
 export { 
-  cleanMovieData, 
+  cleanFilmData, 
   cleanPeopleData, 
   cleanPlanetData,
   cleanVehicleData 
