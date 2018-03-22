@@ -19,10 +19,13 @@ const cleanPeopleData = (peopleDataArray) => {
 
     return {
       name: name,
-      homeworld: homeworldData.name,
-      species: speciesData.name,
-      population: homeworldData.population,
-      language: speciesData.language
+      class: 'people-card',
+      data : {
+        homeworld: homeworldData.name,
+        species: speciesData.name,
+        population: homeworldData.population,
+        language: speciesData.language
+      }
     };
   });
   return Promise.all(promises);
@@ -35,10 +38,13 @@ const cleanPlanetData = (planetsDataArrray) => {
 
     return {
       name: name,
-      terrain,
-      population,
-      climate,
-      residents: namesOfResidents.join() || 'none'
+      class: 'planet-card',
+      data: {
+        terrain,
+        population,
+        climate,
+        residents: namesOfResidents.join() || 'none'
+      }
     };
   });
   return Promise.all(promises);
@@ -59,9 +65,12 @@ const cleanVehicleData = (vehiclesDataArrray) => {
     
     return {
       name,
-      model,
-      class: vehicle_class,
-      passengers
+      class: 'vehicle-card',
+      data: {
+        model,
+        class: vehicle_class,
+        passengers
+      }
     };
   });
   return Promise.all(promises);

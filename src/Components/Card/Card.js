@@ -1,10 +1,15 @@
 import React from 'react';
 import './Card.css';
 
-const Card = () => {
+const Card = ({info}) => {
+  const keys = Object.keys(info.data)
+  const cardInfo = keys.map((key, index) => {
+    return <p key={index}>{key}: {info.data[key]}</p>;
+  });
   return (
-    <div>
-      Card
+    <div className={info.class}>
+      <h2>{info.name}</h2>
+      {cardInfo}
     </div>
   );
 };
