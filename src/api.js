@@ -1,5 +1,5 @@
 import { 
-  cleanMovieData, 
+  cleanFilmData, 
   cleanPeopleData, 
   cleanPlanetData, 
   cleanVehicleData 
@@ -7,34 +7,34 @@ import {
 
 const root = 'https://swapi.co/api/';
 
-const getMovieData = async () => {
+const filmData = async () => {
   const ramdomNumber = Math.floor((Math.random() * 7) + 1);
   const response = await fetch(`${root}films/${ramdomNumber}`);
   const data =  await response.json();
-  return cleanMovieData(data);
+  return cleanFilmData(data);
 };
 
-const getPeopleData = async () => {
+const peopleData = async () => {
   const response = await fetch(`${root}people`);
   const data = await response.json();
   return cleanPeopleData(data.results);
 };
 
-const getPlanetData = async () => {
+const planetData = async () => {
   const response = await fetch(`${root}planets`);
   const data = await response.json();
   return cleanPlanetData(data.results);
 };
 
-const getVehicleData = async () => {
+const vehicleData = async () => {
   const response = await fetch(`${root}vehicles`);
   const data = await response.json();
   return cleanVehicleData(data.results);
 };
 
 export default { 
-  getMovieData, 
-  getPeopleData, 
-  getPlanetData, 
-  getVehicleData 
+  filmData, 
+  peopleData, 
+  planetData, 
+  vehicleData 
 };

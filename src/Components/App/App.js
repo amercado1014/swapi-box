@@ -22,23 +22,28 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    await this.fetchApiData();
+    await this.fetchFilm();
   }
-  
-  fetchApiData = async () => {
+
+  fetchFilm = async () => {
     try {
-      const film = await Swapi.getMovieData();
-      const people = await Swapi.getPeopleData();
-      const planets = await Swapi.getPlanetData();
-      const vehicles = await Swapi.getVehicleData();
-      this.setState({film, people, planets, vehicles});
+      const film = await Swapi.filmData();
+      this.setState({film}); 
     } catch (error) {
       this.setState({ errorStatus: true });
     }  
   }
-
-  setCardsArray = (type) => {
-    this.setState({cards: this.state[type]});
+  
+  fetchApiData = async (category, dataCategory) => {
+    if (this.state[category].length === 0) {
+      try {
+        const fetchedData = await Swapi[dataCategory]();
+        this.setState({[category]: fetchedData});
+      } catch (error) {
+        this.setState({ errorStatus: true });
+      }
+    } 
+    this.setState({ cards: this.state[category] })   
   }
 
   render() {
@@ -49,7 +54,7 @@ class App extends Component {
         <div className="flex">
           <Summary film={film}/>
           <div className="right-side">
-            <Nav setCards={this.setCardsArray} />
+            <Nav setCards={this.fetchApiData} />
             <Favorites />
             <CardContainer cards={cards} />
           </div>
