@@ -40,4 +40,16 @@ describe('Nav', () => {
   it('should display the length of favorites array', () => {
     expect(wrapper.find('span').text()).toEqual('1');
   });
+
+  it('should invoke fetchCards with the right params', () => {
+    const peopleButton = wrapper.find('.people-button');
+    peopleButton.simulate('click');
+    expect(mockFetchCards).toHaveBeenCalledWith('people', 'peopleData');
+  });
+
+  it('should invoke displayFavorites with the right params', () => {
+    const favoritesButton = wrapper.find('.favorites-button');
+    favoritesButton.simulate('click');
+    expect(mockDisplayFavorites).toHaveBeenCalledWith('favorites');
+  });
 });

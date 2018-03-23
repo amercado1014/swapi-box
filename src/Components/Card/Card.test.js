@@ -24,4 +24,10 @@ describe('Card', () => {
   it('should have the correct number of p tags for card data', () => {
     expect(wrapper.find('p').length).toEqual(4);
   });
+
+  it('should invoke setFavorites with the correct params', () => {
+    const favoritesButton = wrapper.find('button');
+    favoritesButton.simulate('click');
+    expect(mockSetFavorites).toHaveBeenCalledWith(mockCardData);
+  });
 });
