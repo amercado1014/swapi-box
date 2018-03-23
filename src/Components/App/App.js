@@ -21,16 +21,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    await this.fetchFilm();
-  }
-
-  fetchFilm = async () => {
-    try {
-      const film = await Swapi.filmData();
-      this.setState({film}); 
-    } catch (error) {
-      this.setState({ errorStatus: true });
-    }  
+    await this.fetchApiData('film', 'filmData');
   }
   
   fetchApiData = async (category, dataCategory) => {
@@ -46,7 +37,9 @@ class App extends Component {
   }
 
   setCardsArray = (category) => {
-    this.setState({ cards: this.state[category] });
+    if (category !== 'film') {
+      this.setState({ cards: this.state[category] });
+    }
   }
 
   setFavoritesArray = (card) => {
