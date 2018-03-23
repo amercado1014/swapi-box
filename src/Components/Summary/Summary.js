@@ -1,5 +1,6 @@
 import React from 'react';
 import './Summary.css';
+import PropTypes from 'prop-types';
 
 const Summary = ({film}) => {
   return (
@@ -17,6 +18,10 @@ const Summary = ({film}) => {
       </div>
     </div>
   );
+};
+
+Summary.propTypes = {
+  film: PropTypes.object
 };
 
 export default Summary;

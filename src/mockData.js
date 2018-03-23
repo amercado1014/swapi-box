@@ -42,7 +42,15 @@ const mockCardContainerData = [
   }
 ];
 
+const mockSummaryData = {
+  date: "1983-05-25",
+  episode: 6,
+  text: "Luke Skywalker has returned to\r\nhis home planet of Tatooine",
+  title: "Return of the Jedi"
+};
+
 export {
   mockCardData,
-  mockCardContainerData
+  mockCardContainerData,
+  mockSummaryData
 };
