@@ -6,6 +6,7 @@ import { mockCardData } from '../../mockData';
 describe('Card', () => {
   let wrapper;
   let mockSetFavorites;
+
   beforeEach(() => {
     mockSetFavorites = jest.fn();
     wrapper = shallow(<Card card={mockCardData}
