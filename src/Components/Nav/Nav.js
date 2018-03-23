@@ -1,5 +1,6 @@
 import React from 'react';
 import './Nav.css';
+import PropTypes from 'prop-types';
 
 const Nav = ({fetchCards, favorites, displayFavorites}) => {
   return (
@@ -18,6 +19,12 @@ const Nav = ({fetchCards, favorites, displayFavorites}) => {
       >Favorites: <span>{favorites.length}</span></button>
     </div>
   );
+};
+
+Nav.propTypes = {
+  fetchCards: PropTypes.func,
+  favorites: PropTypes.array,
+  displayFavorites: PropTypes.func
 };
 
 export default Nav;
