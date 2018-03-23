@@ -2,15 +2,15 @@ import React from 'react';
 import './Card.css';
 import PropTypes from 'prop-types';
 
-const Card = ({info, setFavorites}) => {
-  const keys = Object.keys(info.data);
+const Card = ({card, setFavorites}) => {
+  const keys = Object.keys(card.data);
   const cardInfo = keys.map((key, index) => {
-    return <p key={index}>{key}: {info.data[key]}</p>;
+    return <p key={index}>{key}: {card.data[key]}</p>;
   });
   return (
-    <div className={info.class}>
-      <h2>{info.name} 
-        <button onClick={() => setFavorites(info)}>
+    <div className={card.class}>
+      <h2>{card.name} 
+        <button onClick={() => setFavorites(card)}>
           &#9733;
         </button>
       </h2>
@@ -20,7 +20,7 @@ const Card = ({info, setFavorites}) => {
 };
 
 Card.propTypes = {
-  info: PropTypes.object,
+  card: PropTypes.object,
   setFavorites: PropTypes.func
 };
 

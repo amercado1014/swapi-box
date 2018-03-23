@@ -1,0 +1,343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    card={
+        Object {
+            "class": "people-card",
+            "data": Object {
+              "homeworld": "Tatooine",
+              "language": "Galactic Basic",
+              "population": "200000",
+              "species": "Human",
+            },
+            "name": "Luke Skywalker",
+          }
+    }
+    setFavorites={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Luke Skywalker
+          <button
+                    onClick={[Function]}
+          >
+                    ★
+          </button>
+</h2>,
+        Array [
+          <p>
+            homeworld
+            : 
+            Tatooine
+</p>,
+          <p>
+            language
+            : 
+            Galactic Basic
+</p>,
+          <p>
+            population
+            : 
+            200000
+</p>,
+          <p>
+            species
+            : 
+            Human
+</p>,
+        ],
+      ],
+      "className": "people-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Luke Skywalker",
+            <button
+              onClick={[Function]}
+>
+              ★
+</button>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Luke Skywalker",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "★",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "★",
+            "type": "button",
+          },
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "homeworld",
+            ": ",
+            "Tatooine",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "homeworld",
+          ": ",
+          "Tatooine",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "language",
+            ": ",
+            "Galactic Basic",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "language",
+          ": ",
+          "Galactic Basic",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "population",
+            ": ",
+            "200000",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "population",
+          ": ",
+          "200000",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "species",
+            ": ",
+            "Human",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "species",
+          ": ",
+          "Human",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Luke Skywalker
+            <button
+                        onClick={[Function]}
+            >
+                        ★
+            </button>
+</h2>,
+          Array [
+            <p>
+              homeworld
+              : 
+              Tatooine
+</p>,
+            <p>
+              language
+              : 
+              Galactic Basic
+</p>,
+            <p>
+              population
+              : 
+              200000
+</p>,
+            <p>
+              species
+              : 
+              Human
+</p>,
+          ],
+        ],
+        "className": "people-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Luke Skywalker",
+              <button
+                onClick={[Function]}
+>
+                ★
+</button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Luke Skywalker",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "★",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "★",
+              "type": "button",
+            },
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "homeworld",
+              ": ",
+              "Tatooine",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "homeworld",
+            ": ",
+            "Tatooine",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "language",
+              ": ",
+              "Galactic Basic",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "language",
+            ": ",
+            "Galactic Basic",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "population",
+              ": ",
+              "200000",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "population",
+            ": ",
+            "200000",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "species",
+              ": ",
+              "Human",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "species",
+            ": ",
+            "Human",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
