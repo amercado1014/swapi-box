@@ -7,7 +7,7 @@ const CardContainer = ({cards, setFavorites}) => {
   const displayCards = cards.map(card => {
     return <Card 
       key={card.name} 
-      info={card} 
+      card={card} 
       setFavorites={setFavorites} />;
   });
   return (
