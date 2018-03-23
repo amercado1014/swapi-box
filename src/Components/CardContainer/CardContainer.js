@@ -1,12 +1,13 @@
 import React from 'react';
-import Card from '../Card/Card'
+import Card from '../Card/Card';
 import './CardContainer.css';
 
-const CardContainer = ({cards}) => {
+const CardContainer = ({cards, setFavorites}) => {
   const displayCards = cards.map(card => {
     return <Card 
       key={card.name} 
-      info={card} />;
+      info={card} 
+      setFavorites={setFavorites} />;
   });
   return (
     <div>
