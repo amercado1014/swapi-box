@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="title"
+>
+          SWAPI-Box
+</h1>,
+        <div
+          className="flex"
+>
+          <Summary
+                    film={Object {}}
+          />
+          <div
+                    className="right-side"
+          >
+                    <Nav
+                              displayFavorites={[Function]}
+                              favorites={Array []}
+                              fetchCards={[Function]}
+                    />
+                    <CardContainer
+                              cards={Array []}
+                              setFavorites={[Function]}
+                    />
+          </div>
+</div>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SWAPI-Box",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "SWAPI-Box",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Summary
+              film={Object {}}
+/>,
+            <div
+              className="right-side"
+>
+              <Nav
+                            displayFavorites={[Function]}
+                            favorites={Array []}
+                            fetchCards={[Function]}
+              />
+              <CardContainer
+                            cards={Array []}
+                            setFavorites={[Function]}
+              />
+</div>,
+          ],
+          "className": "flex",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "film": Object {},
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Nav
+                  displayFavorites={[Function]}
+                  favorites={Array []}
+                  fetchCards={[Function]}
+/>,
+                <CardContainer
+                  cards={Array []}
+                  setFavorites={[Function]}
+/>,
+              ],
+              "className": "right-side",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "displayFavorites": [Function],
+                  "favorites": Array [],
+                  "fetchCards": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "cards": Array [],
+                  "setFavorites": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="title"
+>
+            SWAPI-Box
+</h1>,
+          <div
+            className="flex"
+>
+            <Summary
+                        film={Object {}}
+            />
+            <div
+                        className="right-side"
+            >
+                        <Nav
+                                    displayFavorites={[Function]}
+                                    favorites={Array []}
+                                    fetchCards={[Function]}
+                        />
+                        <CardContainer
+                                    cards={Array []}
+                                    setFavorites={[Function]}
+                        />
+            </div>
+</div>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SWAPI-Box",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "SWAPI-Box",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Summary
+                film={Object {}}
+/>,
+              <div
+                className="right-side"
+>
+                <Nav
+                                displayFavorites={[Function]}
+                                favorites={Array []}
+                                fetchCards={[Function]}
+                />
+                <CardContainer
+                                cards={Array []}
+                                setFavorites={[Function]}
+                />
+</div>,
+            ],
+            "className": "flex",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "film": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Nav
+                    displayFavorites={[Function]}
+                    favorites={Array []}
+                    fetchCards={[Function]}
+/>,
+                  <CardContainer
+                    cards={Array []}
+                    setFavorites={[Function]}
+/>,
+                ],
+                "className": "right-side",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "displayFavorites": [Function],
+                    "favorites": Array [],
+                    "fetchCards": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "cards": Array [],
+                    "setFavorites": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
