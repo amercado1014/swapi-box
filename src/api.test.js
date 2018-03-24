@@ -14,10 +14,11 @@ describe('fetch data', () => {
   let url;
 
   beforeEach(() => {
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve(mockApiFilmData)
-    }));
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockApiFilmData)
+      }));
     url = 'https://swapi.co/api/films/1';
   });
 
@@ -34,37 +35,41 @@ describe('fetch data', () => {
 describe('clean data', () => {
 
   it('should clean film data', async () => {
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve(mockApiFilmData)
-    }));
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockApiFilmData)
+      }));
     const returnedValue = await Swapi.filmData();
     expect(returnedValue).toEqual(mockCleanFilmData);
   });
 
   it('should clean people data', async () => {
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve(mockApiPeopleData)
-    }));
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockApiPeopleData)
+      }));
     const returnedValue = await Swapi.peopleData();
     expect(returnedValue).toEqual(mockCleanPeopleData);
   });
 
   it('should clean planet data', async () => {
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve(mockApiPlanetData)
-    }));
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockApiPlanetData)
+      }));
     const returnedValue = await Swapi.planetData();
     expect(returnedValue).toEqual(mockCleanPlanetData);
   });
   
   it('should clean vehicle data', async () => {
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve(mockApiVehicleData)
-    })); 
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockApiVehicleData)
+      })); 
     const returnedValue = await Swapi.vehicleData();
     expect(returnedValue).toEqual(mockCleanVehicleData);
   });

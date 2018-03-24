@@ -85,6 +85,7 @@ const vehicleData = async () => {
 
 const cleanVehicleData = (vehiclesDataArrray) => {
   const promises = vehiclesDataArrray.map(async vehicle => {
+    //eslint-disable-next-line
     const { name, model, vehicle_class, passengers } = vehicle;
 
     return {
@@ -92,6 +93,7 @@ const cleanVehicleData = (vehiclesDataArrray) => {
       class: 'vehicle-card',
       data: {
         model,
+        //eslint-disable-next-line
         class: vehicle_class,
         passengers
       }
