@@ -20,7 +20,7 @@ React, JavaScript, and ES7 Async were used for this project.
 
 7.Using propTypes for every component receiving props.
 
-## Indvidual Project
+## Individual Project
 
 Aldo Mercado
 
