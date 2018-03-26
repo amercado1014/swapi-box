@@ -34,6 +34,6 @@ Run `npm start` and visit localhost:3000 in your browser
 
 ## Screenshot
 
-![Screenshot1](./src/images/swapi-box1)
+![Screenshot1](./src/images/swapi-box1.png)
 
-![Screenshot2](./src/images/swapi-box2)
+![Screenshot2](./src/images/swapi-box2.png)
