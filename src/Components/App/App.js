@@ -63,7 +63,7 @@ class App extends Component {
     return (
       <div className="App"> 
         <img className='title-img' 
-          src={require('../../swapi.png')} 
+          src={require('../../images/swapi.png')} 
           alt="swapi logo"/>
         <Nav 
           fetchCards={this.fetchApiData} 
