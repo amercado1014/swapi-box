@@ -1,7 +1,6 @@
-.title {
-  text-align: center;
+.title-img {
+  display: block;
+  margin: 25px auto;
+  width: 50%;
 }
 
-.flex {
-  display: flex;
-}

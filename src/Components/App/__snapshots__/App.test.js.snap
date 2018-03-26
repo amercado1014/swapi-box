@@ -18,31 +18,24 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1
-          className="title"
->
-          SWAPI-Box
-</h1>,
-        <div
-          className="flex"
->
-          <Summary
-                    film={Object {}}
-          />
-          <div
-                    className="right-side"
-          >
-                    <Nav
-                              displayFavorites={[Function]}
-                              favorites={Array []}
-                              fetchCards={[Function]}
-                    />
-                    <CardContainer
-                              cards={Array []}
-                              setFavorites={[Function]}
-                    />
-          </div>
-</div>,
+        <img
+          alt="swapi logo"
+          className="title-img"
+          src="swapi.png"
+/>,
+        <Nav
+          displayFavorites={[Function]}
+          favorites={Array []}
+          fetchCards={[Function]}
+/>,
+        <Summary
+          film={Object {}}
+/>,
+        <CardContainer
+          cards={Array []}
+          favorites={Array []}
+          setFavorites={[Function]}
+/>,
       ],
       "className": "App",
     },
@@ -53,101 +46,50 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "SWAPI-Box",
-          "className": "title",
+          "alt": "swapi logo",
+          "className": "title-img",
+          "src": "swapi.png",
         },
         "ref": null,
-        "rendered": "SWAPI-Box",
-        "type": "h1",
+        "rendered": null,
+        "type": "img",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
-          "children": Array [
-            <Summary
-              film={Object {}}
-/>,
-            <div
-              className="right-side"
->
-              <Nav
-                            displayFavorites={[Function]}
-                            favorites={Array []}
-                            fetchCards={[Function]}
-              />
-              <CardContainer
-                            cards={Array []}
-                            setFavorites={[Function]}
-              />
-</div>,
-          ],
-          "className": "flex",
+          "displayFavorites": [Function],
+          "favorites": Array [],
+          "fetchCards": [Function],
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "film": Object {},
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Nav
-                  displayFavorites={[Function]}
-                  favorites={Array []}
-                  fetchCards={[Function]}
-/>,
-                <CardContainer
-                  cards={Array []}
-                  setFavorites={[Function]}
-/>,
-              ],
-              "className": "right-side",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "displayFavorites": [Function],
-                  "favorites": Array [],
-                  "fetchCards": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "cards": Array [],
-                  "setFavorites": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "film": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "cards": Array [],
+          "favorites": Array [],
+          "setFavorites": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -159,31 +101,24 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1
-            className="title"
->
-            SWAPI-Box
-</h1>,
-          <div
-            className="flex"
->
-            <Summary
-                        film={Object {}}
-            />
-            <div
-                        className="right-side"
-            >
-                        <Nav
-                                    displayFavorites={[Function]}
-                                    favorites={Array []}
-                                    fetchCards={[Function]}
-                        />
-                        <CardContainer
-                                    cards={Array []}
-                                    setFavorites={[Function]}
-                        />
-            </div>
-</div>,
+          <img
+            alt="swapi logo"
+            className="title-img"
+            src="swapi.png"
+/>,
+          <Nav
+            displayFavorites={[Function]}
+            favorites={Array []}
+            fetchCards={[Function]}
+/>,
+          <Summary
+            film={Object {}}
+/>,
+          <CardContainer
+            cards={Array []}
+            favorites={Array []}
+            setFavorites={[Function]}
+/>,
         ],
         "className": "App",
       },
@@ -194,101 +129,50 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "SWAPI-Box",
-            "className": "title",
+            "alt": "swapi logo",
+            "className": "title-img",
+            "src": "swapi.png",
           },
           "ref": null,
-          "rendered": "SWAPI-Box",
-          "type": "h1",
+          "rendered": null,
+          "type": "img",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "function",
           "props": Object {
-            "children": Array [
-              <Summary
-                film={Object {}}
-/>,
-              <div
-                className="right-side"
->
-                <Nav
-                                displayFavorites={[Function]}
-                                favorites={Array []}
-                                fetchCards={[Function]}
-                />
-                <CardContainer
-                                cards={Array []}
-                                setFavorites={[Function]}
-                />
-</div>,
-            ],
-            "className": "flex",
+            "displayFavorites": [Function],
+            "favorites": Array [],
+            "fetchCards": [Function],
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "film": Object {},
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <Nav
-                    displayFavorites={[Function]}
-                    favorites={Array []}
-                    fetchCards={[Function]}
-/>,
-                  <CardContainer
-                    cards={Array []}
-                    setFavorites={[Function]}
-/>,
-                ],
-                "className": "right-side",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "displayFavorites": [Function],
-                    "favorites": Array [],
-                    "fetchCards": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "cards": Array [],
-                    "setFavorites": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "div",
-            },
-          ],
-          "type": "div",
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "film": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "cards": Array [],
+            "favorites": Array [],
+            "setFavorites": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",

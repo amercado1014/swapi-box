@@ -62,19 +62,18 @@ class App extends Component {
     const { film, cards, favorites } = this.state;
     return (
       <div className="App"> 
-        <h1 className="title">SWAPI-Box</h1>
-        <div className="flex">
-          <Summary film={film}/>
-          <div className="right-side">
-            <Nav 
-              fetchCards={this.fetchApiData} 
-              favorites={favorites} 
-              displayFavorites={this.setCardsArray} />
-            <CardContainer 
-              cards={cards} 
-              setFavorites={this.setFavoritesArray} />
-          </div>
-        </div>
+        <img className='title-img' 
+          src={require('../../swapi.png')} 
+          alt="swapi logo"/>
+        <Nav 
+          fetchCards={this.fetchApiData} 
+          favorites={favorites} 
+          displayFavorites={this.setCardsArray} />
+        <Summary film={film}/>
+        <CardContainer 
+          cards={cards} 
+          setFavorites={this.setFavoritesArray}
+          favorites={favorites} /> 
       </div>
     );
   }
