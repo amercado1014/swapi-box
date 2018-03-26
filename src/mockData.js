@@ -45,7 +45,8 @@ const mockCardContainerData = [
 const mockSummaryData = {
   date: "1983-05-25",
   episode: 6,
-  text: "Luke Skywalker has returned to\r\nhis home planet of Tatooine",
+  text: ["Luke Skywalker has returned to\r\nhis home planet of Tatooine", 
+    "Luke Skywalker has returned to\r\nhis home planet of Tatooine"],
   title: "Return of the Jedi"
 };
 
@@ -104,9 +105,8 @@ const mockApiFilmData = {
 
 const mockCleanFilmData = { 
   "date": "1977-05-25", 
-  "episode": 1,
-  "text": "It is a period of civil war", 
-  "title": "A New Hope" 
+  "episode": 1, 
+  "text": ["It is a period of civil war"], "title": "A New Hope" 
 };
 
 const mockApiPeopleData = {
@@ -171,9 +171,7 @@ const mockApiPlanetData = {
       "surface_water": "40",
       "population": "2000000000",
       "residents": [
-        "https://swapi.co/api/people/5/",
-        "https://swapi.co/api/people/68/",
-        "https://swapi.co/api/people/81/"
+        "https://swapi.co/api/people/5/"
       ],
       "films": [
         "https://swapi.co/api/films/6/",
@@ -187,15 +185,15 @@ const mockApiPlanetData = {
 };
 
 const mockCleanPlanetData = [
-  { 
-    "class": "planet-card",
-    "data": 
-     { "climate": "temperate",
-       "population": "2000000000",
-       "residents": ",,",
-       "terrain": "grasslands, mountains"
-     }, 
-    "name": "Alderaan" }
+  {
+    "class": "planet-card", 
+    "data": {
+      "climate": "temperate", 
+      "population": "2000000000", 
+      "residents": "none", 
+      "terrain": "grasslands, mountains"
+    }, "name": "Alderaan"
+  }
 ];
 
 export {

@@ -10,7 +10,8 @@ describe('Card', () => {
   beforeEach(() => {
     mockSetFavorites = jest.fn();
     wrapper = shallow(<Card card={mockCardData}
-      setFavorites={mockSetFavorites} />);
+      setFavorites={mockSetFavorites}
+      active={'active'} />);
   });
 
   it('should exist', () => {
