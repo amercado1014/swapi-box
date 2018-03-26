@@ -45,3 +45,10 @@
     height: 300px;
   }
 }
+
+@media (max-width: 500px) {
+  .summary {
+    animation: height 25s linear;
+    width: 300px;
+  }
+}

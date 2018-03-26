@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
+    active="active"
     card={
         Object {
             "class": "people-card",
@@ -33,7 +34,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <button
-          className="star-button undefined"
+          className="star-button active"
           onClick={[Function]}
 >
           <Icon
@@ -58,6 +59,7 @@ ShallowWrapper {
         <h2>
           Luke Skywalker
 </h2>,
+        <hr />,
         Array [
           <p>
             homeworld
@@ -108,7 +110,7 @@ ShallowWrapper {
             }
             size={20}
 />,
-          "className": "star-button undefined",
+          "className": "star-button active",
           "onClick": [Function],
         },
         "ref": null,
@@ -148,6 +150,15 @@ ShallowWrapper {
         "ref": null,
         "rendered": "Luke Skywalker",
         "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
       },
       Object {
         "instance": null,
@@ -236,7 +247,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <button
-            className="star-button undefined"
+            className="star-button active"
             onClick={[Function]}
 >
             <Icon
@@ -261,6 +272,7 @@ ShallowWrapper {
           <h2>
             Luke Skywalker
 </h2>,
+          <hr />,
           Array [
             <p>
               homeworld
@@ -311,7 +323,7 @@ ShallowWrapper {
               }
               size={20}
 />,
-            "className": "star-button undefined",
+            "className": "star-button active",
             "onClick": [Function],
           },
           "ref": null,
@@ -351,6 +363,15 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Luke Skywalker",
           "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
         },
         Object {
           "instance": null,

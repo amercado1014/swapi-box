@@ -16,6 +16,7 @@ const Card = ({card, setFavorites, active}) => {
         <Icon size={20} icon={starFull} />
       </button>
       <h2>{card.name}</h2>
+      <hr/>
       {cardInfo}
     </div>
   );

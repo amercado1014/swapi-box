@@ -1,3 +1,672 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should match the snapshot 1`] = `undefined`;
+exports[`Card should match the snapshot with empty favorites array 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    cards={
+        Array [
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Luke Skywalker",
+            },
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Darth Vader",
+            },
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "n/a",
+                "population": "200000",
+                "species": "Droid",
+              },
+              "name": "C-3PO",
+            },
+          ]
+    }
+    favorites={Array []}
+    setFavorites={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        false,
+        Array [
+          <Card
+            card={
+                        Object {
+                                    "class": "people-card",
+                                    "data": Object {
+                                      "homeworld": "Tatooine",
+                                      "language": "Galactic Basic",
+                                      "population": "200000",
+                                      "species": "Human",
+                                    },
+                                    "name": "Luke Skywalker",
+                                  }
+            }
+            setFavorites={[Function]}
+/>,
+          <Card
+            card={
+                        Object {
+                                    "class": "people-card",
+                                    "data": Object {
+                                      "homeworld": "Tatooine",
+                                      "language": "Galactic Basic",
+                                      "population": "200000",
+                                      "species": "Human",
+                                    },
+                                    "name": "Darth Vader",
+                                  }
+            }
+            setFavorites={[Function]}
+/>,
+          <Card
+            card={
+                        Object {
+                                    "class": "people-card",
+                                    "data": Object {
+                                      "homeworld": "Tatooine",
+                                      "language": "n/a",
+                                      "population": "200000",
+                                      "species": "Droid",
+                                    },
+                                    "name": "C-3PO",
+                                  }
+            }
+            setFavorites={[Function]}
+/>,
+        ],
+      ],
+      "className": "card-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      false,
+      Object {
+        "instance": null,
+        "key": "Luke Skywalker",
+        "nodeType": "function",
+        "props": Object {
+          "card": Object {
+            "class": "people-card",
+            "data": Object {
+              "homeworld": "Tatooine",
+              "language": "Galactic Basic",
+              "population": "200000",
+              "species": "Human",
+            },
+            "name": "Luke Skywalker",
+          },
+          "setFavorites": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Darth Vader",
+        "nodeType": "function",
+        "props": Object {
+          "card": Object {
+            "class": "people-card",
+            "data": Object {
+              "homeworld": "Tatooine",
+              "language": "Galactic Basic",
+              "population": "200000",
+              "species": "Human",
+            },
+            "name": "Darth Vader",
+          },
+          "setFavorites": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "C-3PO",
+        "nodeType": "function",
+        "props": Object {
+          "card": Object {
+            "class": "people-card",
+            "data": Object {
+              "homeworld": "Tatooine",
+              "language": "n/a",
+              "population": "200000",
+              "species": "Droid",
+            },
+            "name": "C-3PO",
+          },
+          "setFavorites": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          false,
+          Array [
+            <Card
+              card={
+                            Object {
+                                          "class": "people-card",
+                                          "data": Object {
+                                            "homeworld": "Tatooine",
+                                            "language": "Galactic Basic",
+                                            "population": "200000",
+                                            "species": "Human",
+                                          },
+                                          "name": "Luke Skywalker",
+                                        }
+              }
+              setFavorites={[Function]}
+/>,
+            <Card
+              card={
+                            Object {
+                                          "class": "people-card",
+                                          "data": Object {
+                                            "homeworld": "Tatooine",
+                                            "language": "Galactic Basic",
+                                            "population": "200000",
+                                            "species": "Human",
+                                          },
+                                          "name": "Darth Vader",
+                                        }
+              }
+              setFavorites={[Function]}
+/>,
+            <Card
+              card={
+                            Object {
+                                          "class": "people-card",
+                                          "data": Object {
+                                            "homeworld": "Tatooine",
+                                            "language": "n/a",
+                                            "population": "200000",
+                                            "species": "Droid",
+                                          },
+                                          "name": "C-3PO",
+                                        }
+              }
+              setFavorites={[Function]}
+/>,
+          ],
+        ],
+        "className": "card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        false,
+        Object {
+          "instance": null,
+          "key": "Luke Skywalker",
+          "nodeType": "function",
+          "props": Object {
+            "card": Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Luke Skywalker",
+            },
+            "setFavorites": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Darth Vader",
+          "nodeType": "function",
+          "props": Object {
+            "card": Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Darth Vader",
+            },
+            "setFavorites": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "C-3PO",
+          "nodeType": "function",
+          "props": Object {
+            "card": Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "n/a",
+                "population": "200000",
+                "species": "Droid",
+              },
+              "name": "C-3PO",
+            },
+            "setFavorites": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card should match the snapshot with favorites and cards array 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    cards={
+        Array [
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Luke Skywalker",
+            },
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Darth Vader",
+            },
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "n/a",
+                "population": "200000",
+                "species": "Droid",
+              },
+              "name": "C-3PO",
+            },
+          ]
+    }
+    favorites={
+        Array [
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Luke Skywalker",
+            },
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Darth Vader",
+            },
+            Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "n/a",
+                "population": "200000",
+                "species": "Droid",
+              },
+              "name": "C-3PO",
+            },
+          ]
+    }
+    setFavorites={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        false,
+        Array [
+          <Card
+            active="active"
+            card={
+                        Object {
+                                    "class": "people-card",
+                                    "data": Object {
+                                      "homeworld": "Tatooine",
+                                      "language": "Galactic Basic",
+                                      "population": "200000",
+                                      "species": "Human",
+                                    },
+                                    "name": "Luke Skywalker",
+                                  }
+            }
+            setFavorites={[Function]}
+/>,
+          <Card
+            active="active"
+            card={
+                        Object {
+                                    "class": "people-card",
+                                    "data": Object {
+                                      "homeworld": "Tatooine",
+                                      "language": "Galactic Basic",
+                                      "population": "200000",
+                                      "species": "Human",
+                                    },
+                                    "name": "Darth Vader",
+                                  }
+            }
+            setFavorites={[Function]}
+/>,
+          <Card
+            active="active"
+            card={
+                        Object {
+                                    "class": "people-card",
+                                    "data": Object {
+                                      "homeworld": "Tatooine",
+                                      "language": "n/a",
+                                      "population": "200000",
+                                      "species": "Droid",
+                                    },
+                                    "name": "C-3PO",
+                                  }
+            }
+            setFavorites={[Function]}
+/>,
+        ],
+      ],
+      "className": "card-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      false,
+      Object {
+        "instance": null,
+        "key": "Luke Skywalker",
+        "nodeType": "function",
+        "props": Object {
+          "active": "active",
+          "card": Object {
+            "class": "people-card",
+            "data": Object {
+              "homeworld": "Tatooine",
+              "language": "Galactic Basic",
+              "population": "200000",
+              "species": "Human",
+            },
+            "name": "Luke Skywalker",
+          },
+          "setFavorites": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Darth Vader",
+        "nodeType": "function",
+        "props": Object {
+          "active": "active",
+          "card": Object {
+            "class": "people-card",
+            "data": Object {
+              "homeworld": "Tatooine",
+              "language": "Galactic Basic",
+              "population": "200000",
+              "species": "Human",
+            },
+            "name": "Darth Vader",
+          },
+          "setFavorites": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "C-3PO",
+        "nodeType": "function",
+        "props": Object {
+          "active": "active",
+          "card": Object {
+            "class": "people-card",
+            "data": Object {
+              "homeworld": "Tatooine",
+              "language": "n/a",
+              "population": "200000",
+              "species": "Droid",
+            },
+            "name": "C-3PO",
+          },
+          "setFavorites": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          false,
+          Array [
+            <Card
+              active="active"
+              card={
+                            Object {
+                                          "class": "people-card",
+                                          "data": Object {
+                                            "homeworld": "Tatooine",
+                                            "language": "Galactic Basic",
+                                            "population": "200000",
+                                            "species": "Human",
+                                          },
+                                          "name": "Luke Skywalker",
+                                        }
+              }
+              setFavorites={[Function]}
+/>,
+            <Card
+              active="active"
+              card={
+                            Object {
+                                          "class": "people-card",
+                                          "data": Object {
+                                            "homeworld": "Tatooine",
+                                            "language": "Galactic Basic",
+                                            "population": "200000",
+                                            "species": "Human",
+                                          },
+                                          "name": "Darth Vader",
+                                        }
+              }
+              setFavorites={[Function]}
+/>,
+            <Card
+              active="active"
+              card={
+                            Object {
+                                          "class": "people-card",
+                                          "data": Object {
+                                            "homeworld": "Tatooine",
+                                            "language": "n/a",
+                                            "population": "200000",
+                                            "species": "Droid",
+                                          },
+                                          "name": "C-3PO",
+                                        }
+              }
+              setFavorites={[Function]}
+/>,
+          ],
+        ],
+        "className": "card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        false,
+        Object {
+          "instance": null,
+          "key": "Luke Skywalker",
+          "nodeType": "function",
+          "props": Object {
+            "active": "active",
+            "card": Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Luke Skywalker",
+            },
+            "setFavorites": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Darth Vader",
+          "nodeType": "function",
+          "props": Object {
+            "active": "active",
+            "card": Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "Galactic Basic",
+                "population": "200000",
+                "species": "Human",
+              },
+              "name": "Darth Vader",
+            },
+            "setFavorites": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "C-3PO",
+          "nodeType": "function",
+          "props": Object {
+            "active": "active",
+            "card": Object {
+              "class": "people-card",
+              "data": Object {
+                "homeworld": "Tatooine",
+                "language": "n/a",
+                "population": "200000",
+                "species": "Droid",
+              },
+              "name": "C-3PO",
+            },
+            "setFavorites": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -55,4 +55,17 @@ button:hover {
   background-color:  dimgray;
 }
 
+@media (max-width: 630px) {
+  .nav {
+    flex-direction: column;
+  }
 
+  button {
+    margin: 10px auto;
+    width: 275px;
+  }
+
+  .favorites-button {
+    width: 275px;
+  }
+}

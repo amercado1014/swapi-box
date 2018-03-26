@@ -13,12 +13,12 @@
 .star-button {
   height: 40px;
   width: 40px;
-  border: 4px solid #a5a6ad;
+  background-color:  #fff;
   margin: auto;
 }
 
 .active {
-  background-color:  dimgray;
+  background-color:  #feda4a;
 }
 
 .people-card {
