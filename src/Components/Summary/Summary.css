@@ -1,58 +1,47 @@
 .summary {
-  width: 40%;
-  height: 100%;
-  background: #000;
-  overflow: hidden;
-}
-
-.fade {
-  position: relative;
-  width: 100%;
-  min-height: 60vh;
-  top: -25px;
-  background-image: linear-gradient(0deg, transparent, black 75%);
-  z-index: 1;
-}
-
-.star-wars {
+  animation: height 22s linear;
+  color: black;
   display: flex;
+  height: 0px;
   justify-content: center;
-  position: relative;
-  height: 800px;
-  color: #feda4a;
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 500%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
+  margin: 0 auto;
+  padding: 10px;
   perspective: 400px;
-  text-align: justify;
+  overflow: hidden;
+  width: 450px;
 }
 
-.crawl {
-  position: relative;
-  top: 99999px;
+.film {
+  animation: crawl 120s linear;
   transform-origin: 50% 100%;
-  animation: crawl 60s linear;
-}
-
-.crawl > .title {
-  font-size: 90%;
+  position: relative;
+  color: #feda4a;
+  font-size: 30px;
   text-align: center;
 }
 
-.crawl > .title h1 {
-  margin: 0 0 100px;
-  text-transform: uppercase;
+.film-text {
+  text-align: justify;
 }
 
+
 @keyframes crawl {
-	0% {
-    top: -100px;
-    transform: rotateX(20deg)  translateZ(0);
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
   }
-	100% { 
+  100% {
     top: -6000px;
+    min-height: 0px;
     transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+@keyframes height {
+  0% {
+    height: 300px;
+  }
+  100% {
+    height: 300px;
   }
 }

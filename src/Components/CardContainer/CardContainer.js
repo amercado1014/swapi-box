@@ -3,15 +3,27 @@ import Card from '../Card/Card';
 import './CardContainer.css';
 import PropTypes from 'prop-types';
 
-const CardContainer = ({cards, setFavorites}) => {
+const CardContainer = ({cards, setFavorites, favorites}) => {
   const displayCards = cards.map(card => {
-    return <Card 
-      key={card.name} 
-      card={card} 
-      setFavorites={setFavorites} />;
+    if (favorites.includes(card)) {
+      return <Card
+        key={card.name}
+        card={card}
+        setFavorites={setFavorites}
+        active={'active'} />;
+    } else {
+      return <Card 
+        key={card.name} 
+        card={card} 
+        setFavorites={setFavorites} />;
+    }
   });
+
   return (
-    <div>
+    <div className='card-container'>
+      {!cards.length &&
+       <p className="select">Select a category</p>
+      }
       {displayCards}
     </div>
   );
@@ -19,7 +31,8 @@ const CardContainer = ({cards, setFavorites}) => {
 
 CardContainer.propTypes = {
   cards: PropTypes.array,
-  setFavorites: PropTypes.func
+  setFavorites: PropTypes.func,
+  favorites: PropTypes.array
 };
 
 export default CardContainer;

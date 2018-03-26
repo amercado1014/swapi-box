@@ -32,13 +32,31 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <button
+          className="star-button undefined"
+          onClick={[Function]}
+>
+          <Icon
+                    fill="currentColor"
+                    icon={
+                              Object {
+                                        "children": Array [
+                                          Object {
+                                            "attribs": Object {
+                                              "d": "M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z",
+                                              "fill": "#000000",
+                                            },
+                                            "name": "path",
+                                          },
+                                        ],
+                                        "viewBox": "0 0 16 16",
+                                      }
+                    }
+                    size={20}
+          />
+</button>,
         <h2>
           Luke Skywalker
-          <button
-                    onClick={[Function]}
-          >
-                    ★
-          </button>
 </h2>,
         Array [
           <p>
@@ -63,7 +81,7 @@ ShallowWrapper {
 </p>,
         ],
       ],
-      "className": "people-card",
+      "className": "card people-card",
     },
     "ref": null,
     "rendered": Array [
@@ -72,31 +90,63 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "Luke Skywalker",
-            <button
-              onClick={[Function]}
->
-              ★
-</button>,
-          ],
+          "children": <Icon
+            fill="currentColor"
+            icon={
+                        Object {
+                                    "children": Array [
+                                      Object {
+                                        "attribs": Object {
+                                          "d": "M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z",
+                                          "fill": "#000000",
+                                        },
+                                        "name": "path",
+                                      },
+                                    ],
+                                    "viewBox": "0 0 16 16",
+                                  }
+            }
+            size={20}
+/>,
+          "className": "star-button undefined",
+          "onClick": [Function],
         },
         "ref": null,
-        "rendered": Array [
-          "Luke Skywalker",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "★",
-              "onClick": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "fill": "currentColor",
+            "icon": Object {
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "d": "M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z",
+                    "fill": "#000000",
+                  },
+                  "name": "path",
+                },
+              ],
+              "viewBox": "0 0 16 16",
             },
-            "ref": null,
-            "rendered": "★",
-            "type": "button",
+            "size": 20,
           },
-        ],
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Luke Skywalker",
+        },
+        "ref": null,
+        "rendered": "Luke Skywalker",
         "type": "h2",
       },
       Object {
@@ -185,13 +235,31 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <button
+            className="star-button undefined"
+            onClick={[Function]}
+>
+            <Icon
+                        fill="currentColor"
+                        icon={
+                                    Object {
+                                                "children": Array [
+                                                  Object {
+                                                    "attribs": Object {
+                                                      "d": "M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z",
+                                                      "fill": "#000000",
+                                                    },
+                                                    "name": "path",
+                                                  },
+                                                ],
+                                                "viewBox": "0 0 16 16",
+                                              }
+                        }
+                        size={20}
+            />
+</button>,
           <h2>
             Luke Skywalker
-            <button
-                        onClick={[Function]}
-            >
-                        ★
-            </button>
 </h2>,
           Array [
             <p>
@@ -216,7 +284,7 @@ ShallowWrapper {
 </p>,
           ],
         ],
-        "className": "people-card",
+        "className": "card people-card",
       },
       "ref": null,
       "rendered": Array [
@@ -225,31 +293,63 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Luke Skywalker",
-              <button
-                onClick={[Function]}
->
-                ★
-</button>,
-            ],
+            "children": <Icon
+              fill="currentColor"
+              icon={
+                            Object {
+                                          "children": Array [
+                                            Object {
+                                              "attribs": Object {
+                                                "d": "M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z",
+                                                "fill": "#000000",
+                                              },
+                                              "name": "path",
+                                            },
+                                          ],
+                                          "viewBox": "0 0 16 16",
+                                        }
+              }
+              size={20}
+/>,
+            "className": "star-button undefined",
+            "onClick": [Function],
           },
           "ref": null,
-          "rendered": Array [
-            "Luke Skywalker",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "★",
-                "onClick": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "fill": "currentColor",
+              "icon": Object {
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "d": "M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z",
+                      "fill": "#000000",
+                    },
+                    "name": "path",
+                  },
+                ],
+                "viewBox": "0 0 16 16",
               },
-              "ref": null,
-              "rendered": "★",
-              "type": "button",
+              "size": 20,
             },
-          ],
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Luke Skywalker",
+          },
+          "ref": null,
+          "rendered": "Luke Skywalker",
           "type": "h2",
         },
         Object {

@@ -12,12 +12,16 @@ const filmData = async () => {
   return cleanFilmData(filmData);
 };
 
-const cleanFilmData = (movieData) => {
+const cleanFilmData = (filmData) => {
+  const breakAt = new RegExp(/\s{3,}/, 'g');
+  let text = filmData.opening_crawl.replace(breakAt, '###');
+  text = text.split('###');
+
   return {
-    text: movieData.opening_crawl,
-    title: movieData.title,
-    date: movieData.release_date,
-    episode: movieData.episode_id
+    text,
+    title: filmData.title,
+    date: filmData.release_date,
+    episode: filmData.episode_id
   };
 };
 
@@ -63,7 +67,7 @@ const cleanPlanetData = (planetsDataArrray) => {
         terrain,
         population,
         climate,
-        residents: namesOfResidents.join() || 'none'
+        residents: namesOfResidents.join(',\n') || 'none'
       }
     };
   });
