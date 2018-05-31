@@ -6,19 +6,19 @@ React, JavaScript, and ES7 Async were used for this project.
 
 ## Project Goals
 
-1.Practicing and getting familiar with React components.
+1. Practicing and getting familiar with React components.
 
-2.Writing clean, well refactored code using ES6 syntax.
+2. Writing clean, well refactored code using ES6 syntax.
 
-3.Making informed design decisions to create a user-friendly application.
+3. Making informed design decisions to create a user-friendly application.
 
-4.Keeping state based components to a minimum and leveraging more functional components.
+4. Keeping state based components to a minimum and leveraging more functional components.
 
-5.Using a modular architecture for application file structure.
+5. Using a modular architecture for application file structure.
 
-6.Thinking deeply about React Lifecycle Methods.
+6. Thinking deeply about React Lifecycle Methods.
 
-7.Using propTypes for every component receiving props.
+7. Using propTypes for every component receiving props.
 
 ## Individual Project
 
