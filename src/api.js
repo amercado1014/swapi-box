@@ -7,7 +7,7 @@ const fetchData = async (url) => {
 };
 
 const filmData = async () => {
-  const ramdomNumber = Math.floor((Math.random() * 7) + 1);
+  const ramdomNumber = Math.floor((Math.random() * 6) + 1);
   const filmData =  await fetchData(`${root}films/${ramdomNumber}`);
   return cleanFilmData(filmData);
 };
