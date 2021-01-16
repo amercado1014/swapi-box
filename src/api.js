@@ -1,4 +1,4 @@
-const root = 'https://swapi.co/api/';
+const root = 'https://swapi.dev/api/';
 
 const fetchData = async (url) => {
   const response = await fetch(url);
@@ -34,16 +34,20 @@ const cleanPeopleData = (peopleDataArray) => {
   const promises = peopleDataArray.map(async person => {
     const { name, homeworld, species } = person;
     const homeworldData = await fetchData(homeworld);
-    const speciesData = await fetchData(species);
+    let speciesData
+
+    if (species.length > 0) {
+      speciesData = await fetchData(species);
+    }
 
     return {
       name: name,
       class: 'people-card',
       data: {
         homeworld: homeworldData.name,
-        species: speciesData.name,
+        species: speciesData ? speciesData.name : 'n/a',
         population: homeworldData.population,
-        language: speciesData.language
+        language: speciesData ? speciesData.language : 'n/a'
       }
     };
   });
@@ -107,9 +111,9 @@ const cleanVehicleData = (vehiclesDataArrray) => {
 };
 
 export default {
-  fetchData, 
-  filmData, 
-  peopleData, 
-  planetData, 
-  vehicleData 
+  fetchData,
+  filmData,
+  peopleData,
+  planetData,
+  vehicleData
 };
